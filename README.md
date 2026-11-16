@@ -24,3 +24,7 @@ GitHub의 `main` 브랜치를 Vercel 프로젝트에 연결하면 변경 사항�
 ## 배포
 
 `main` 브랜치에 변경 사항을 푸시하면 연결된 Vercel 프로젝트가 자동으로 다시 배포됩니다.
+
+## 메뉴 이미지
+
+메뉴 이미지는 `assets/images/foods/`에 저장하고 `src/data/menus.ts`에서 각 메뉴에 연결합니다.
