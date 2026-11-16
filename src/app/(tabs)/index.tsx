@@ -13,7 +13,7 @@ import { featuredMenus } from '@/data/menus';
 export function generateMetadata(): Metadata {
   return {
     title: '잇득 | 먹을수록 쌓인다',
-    description: '맛있는 한 끼를 먹고 혜택을 쌓는 잇득을 만나보세요.',
+    description: '맛있는 한 끼를 먹고 돈을 쌓는 잇득을 만나보세요.',
   };
 }
 
@@ -39,7 +39,7 @@ export default function HomeScreen() {
         <Text style={styles.eyebrow}>EAT &amp; EARN</Text>
         <Text style={styles.heroTitle}>맛있게 먹은 만큼{`\n`}혜택으로 돌아와요.</Text>
         <Text style={styles.heroDescription}>
-          잇득 제휴 식당의 메뉴를 먹고 인증하면 포인트가 쌓여요.
+          1포인트= 1원. 포인트를 쌓으면 현금으로 인출할 수 있어요
         </Text>
       </View>
 
