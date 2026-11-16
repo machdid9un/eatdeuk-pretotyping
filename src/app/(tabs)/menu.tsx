@@ -19,7 +19,7 @@ export default function MenuScreen() {
 
       <View style={styles.header}>
         <Text style={styles.eyebrow}>MENU</Text>
-        <Text style={styles.title}>잇득 메뉴</Text>
+        <Text style={styles.title}>현재 사용 가능한 쿠폰</Text>
         <Text style={styles.description}>
           메뉴를 고르면 포인트 적립 쿠폰이 발급됩니다. 사장님께 확인받으세요.
         </Text>
