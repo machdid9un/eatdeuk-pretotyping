@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { BrandColors, Layout } from '@/constants/brand';
 import type { Menu } from '@/types';
@@ -16,9 +16,18 @@ export function MenuCard({ menu, onPress }: MenuCardProps) {
       accessibilityRole="link"
       onPress={onPress}
       style={({ pressed }) => [styles.card, pressed && styles.pressed]}>
-      <View accessibilityLabel={`${menu.menuName} 음식 사진 자리`} style={styles.image}>
-        <Text style={styles.imageText}>{menu.imageLabel}</Text>
-      </View>
+      {menu.imageSource ? (
+        <Image
+          accessibilityLabel={`${menu.menuName} 음식 사진`}
+          resizeMode="cover"
+          source={menu.imageSource}
+          style={styles.image}
+        />
+      ) : (
+        <View accessibilityLabel={`${menu.menuName} 음식 사진 자리`} style={styles.placeholder}>
+          <Text style={styles.placeholderText}>{menu.imageLabel}</Text>
+        </View>
+      )}
       <View style={styles.content}>
         <Text style={styles.restaurant}>{menu.restaurantName}</Text>
         <Text numberOfLines={1} style={styles.menuName}>{menu.menuName}</Text>
@@ -44,11 +53,15 @@ const styles = StyleSheet.create({
   image: {
     width: 126,
     minHeight: 126,
+  },
+  placeholder: {
+    width: 126,
+    minHeight: 126,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: BrandColors.surface,
   },
-  imageText: {
+  placeholderText: {
     color: BrandColors.textMuted,
     fontSize: 13,
     fontWeight: '700',
