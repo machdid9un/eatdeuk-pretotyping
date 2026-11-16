@@ -18,3 +18,7 @@ npm run build:web
 ```
 
 GitHub의 `main` 브랜치를 Vercel 프로젝트에 연결하면 변경 사항이 자동 배포됩니다.
+
+## 배포
+
+`main` 브랜치에 변경 사항을 푸시하면 연결된 Vercel 프로젝트가 자동으로 다시 배포됩니다.
