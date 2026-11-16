@@ -1,5 +1,6 @@
 import { Linking, StyleSheet, Text, View } from 'react-native';
 
+
 import { BrandHeader } from '@/components/brand-header';
 import { MenuCard } from '@/components/menu-card';
 import { PageScrollView } from '@/components/page-scroll-view';
