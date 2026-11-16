@@ -36,7 +36,7 @@ export const menus: readonly Menu[] = [
   {
     id: 'hongbogak-jengban-jjajang',
     restaurantName: '홍보각',
-    menuName: '젱반짜장',
+    menuName: '쟁반짜장',
     points: 800,
     imageLabel: '짜장면',
     imageSource: require('../../assets/images/foods/hongbogak-jengban-jjajang.jpg'),
