@@ -20,7 +20,7 @@ export default function MenuScreen() {
         <Text style={styles.eyebrow}>MENU</Text>
         <Text style={styles.title}>잇득 메뉴</Text>
         <Text style={styles.description}>
-          원하는 메뉴를 선택하면 잇득 참여 신청으로 이어져요.
+          메뉴를 고르면 포인트 적립 쿠폰이 발급됩니다. 사장님께 확인받으세요.
         </Text>
       </View>
 
