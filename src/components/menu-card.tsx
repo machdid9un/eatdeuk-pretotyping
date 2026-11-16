@@ -19,7 +19,7 @@ export function MenuCard({ menu, onPress }: MenuCardProps) {
       {menu.imageSource ? (
         <Image
           accessibilityLabel={`${menu.menuName} 음식 사진`}
-          resizeMode="cover"
+          resizeMode="contain"
           source={menu.imageSource}
           style={styles.image}
         />
@@ -42,7 +42,7 @@ export function MenuCard({ menu, onPress }: MenuCardProps) {
 
 const styles = StyleSheet.create({
   card: {
-    minHeight: 126,
+    minHeight: 136,
     overflow: 'hidden',
     flexDirection: 'row',
     borderWidth: 1,
@@ -51,12 +51,13 @@ const styles = StyleSheet.create({
     backgroundColor: BrandColors.background,
   },
   image: {
-    width: 126,
-    minHeight: 126,
+    width: 136,
+    height: 136,
+    backgroundColor: BrandColors.surface,
   },
   placeholder: {
-    width: 126,
-    minHeight: 126,
+    width: 136,
+    height: 136,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: BrandColors.surface,

@@ -1,6 +1,7 @@
 import { Tabs } from 'expo-router';
 import type { ColorValue } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { BrandColors } from '@/constants/brand';
 
@@ -19,6 +20,9 @@ function TabIcon({ color, focused, label }: TabIconProps) {
 }
 
 export default function TabLayout() {
+  const insets = useSafeAreaInsets();
+  const bottomPadding = Math.max(insets.bottom, 12);
+
   return (
     <Tabs
       screenOptions={{
@@ -26,7 +30,13 @@ export default function TabLayout() {
         sceneStyle: { backgroundColor: BrandColors.background },
         tabBarActiveTintColor: BrandColors.primary,
         tabBarInactiveTintColor: BrandColors.textMuted,
-        tabBarStyle: styles.tabBar,
+        tabBarStyle: [
+          styles.tabBar,
+          {
+            height: 64 + bottomPadding,
+            paddingBottom: bottomPadding,
+          },
+        ],
         tabBarLabelStyle: styles.tabLabel,
       }}>
       <Tabs.Screen
@@ -57,7 +67,7 @@ const styles = StyleSheet.create({
   tabBar: {
     backgroundColor: BrandColors.background,
     borderTopColor: BrandColors.border,
-    paddingTop: 5,
+    paddingTop: 7,
   },
   tabLabel: {
     fontSize: 11,
