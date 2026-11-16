@@ -1,0 +1,20 @@
+# 잇득 랜딩
+
+잇득 고객 수요를 확인하기 위한 웹 프리토타입입니다.
+
+## 로컬 실행
+
+```bash
+npm install
+npm run web
+```
+
+## 검증
+
+```bash
+npm run lint
+npm run typecheck
+npm run build:web
+```
+
+GitHub의 `main` 브랜치를 Vercel 프로젝트에 연결하면 변경 사항이 자동 배포됩니다.
