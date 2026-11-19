@@ -1,5 +1,6 @@
 import { ScrollViewStyleReset, useServerDocumentContext } from 'expo-router/html';
 import type { PropsWithChildren } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function RootHtml({ children }: PropsWithChildren) {
   const { bodyAttributes, bodyNodes, headNodes, htmlAttributes } = useServerDocumentContext();
@@ -19,6 +20,7 @@ export default function RootHtml({ children }: PropsWithChildren) {
       <body {...bodyAttributes}>
         {children}
         {bodyNodes}
+        <Analytics />
       </body>
     </html>
   );
