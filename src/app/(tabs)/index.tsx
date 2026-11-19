@@ -1,5 +1,5 @@
-import type { Metadata } from 'expo-router/server';
 import { router } from 'expo-router';
+import type { Metadata } from 'expo-router/server';
 import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { BalanceCard } from '@/components/balance-card';
@@ -90,12 +90,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 18,
     borderWidth: 1,
-    borderColor: BrandColors.border,
+    borderColor: BrandColors.accent,
     borderRadius: 14,
-    backgroundColor: BrandColors.background,
+    backgroundColor: BrandColors.accent,
   },
   loginButtonText: {
-    color: BrandColors.text,
+    color: BrandColors.primaryDark,
     fontSize: 14,
     fontWeight: '800',
   },
@@ -157,10 +157,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 14,
-    backgroundColor: BrandColors.primarySoft,
+    backgroundColor: BrandColors.accent,
   },
   moreButtonText: {
-    color: BrandColors.primary,
+    color: BrandColors.primaryDark,
     fontSize: 26,
     fontWeight: '700',
     lineHeight: 28,

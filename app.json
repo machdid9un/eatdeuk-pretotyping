@@ -4,10 +4,14 @@
     "slug": "eatdeuk-landing",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/images/eatdeuk-logo.png",
     "scheme": "eatdeuk-landing",
     "userInterfaceStyle": "light",
     "web": {
-      "output": "static"
+      "output": "static",
+      "favicon": "./assets/images/eatdeuk-logo.png",
+      "themeColor": "#63301D",
+      "backgroundColor": "#FFFCF4"
     },
     "plugins": ["expo-router"],
     "experiments": {

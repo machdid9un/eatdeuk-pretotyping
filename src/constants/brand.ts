@@ -1,12 +1,15 @@
 export const BrandColors = {
-  primary: '#126BFF',
-  primarySoft: '#EAF2FF',
-  background: '#FFFFFF',
-  surface: '#F7F8FA',
-  text: '#111318',
-  textSecondary: '#5C626D',
-  textMuted: '#8B919C',
-  border: '#E7E9ED',
+  primary: '#63301D',
+  primaryDark: '#472014',
+  primarySoft: '#FFF0AD',
+  accent: '#FFD43D',
+  background: '#FFFCF4',
+  card: '#FFFFFF',
+  surface: '#FFF6D8',
+  text: '#352018',
+  textSecondary: '#6E5146',
+  textMuted: '#9A7C70',
+  border: '#EAD9C8',
 } as const;
 
 export const Layout = {

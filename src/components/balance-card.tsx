@@ -37,13 +37,13 @@ const styles = StyleSheet.create({
     backgroundColor: BrandColors.primary,
   },
   label: {
-    color: '#DDE9FF',
+    color: '#FFE9A6',
     fontSize: 14,
     fontWeight: '700',
   },
   balance: {
     marginTop: 7,
-    color: '#FFFFFF',
+    color: BrandColors.accent,
     fontSize: 34,
     fontWeight: '900',
     letterSpacing: -1,
@@ -55,12 +55,12 @@ const styles = StyleSheet.create({
     paddingBottom: 6,
   },
   actionText: {
-    color: '#FFFFFF',
+    color: '#FFF8EA',
     fontSize: 13,
     fontWeight: '800',
   },
   arrow: {
-    color: '#FFFFFF',
+    color: BrandColors.accent,
     fontSize: 24,
     lineHeight: 24,
   },

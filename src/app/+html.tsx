@@ -1,6 +1,6 @@
+import { Analytics } from '@vercel/analytics/react';
 import { ScrollViewStyleReset, useServerDocumentContext } from 'expo-router/html';
 import type { PropsWithChildren } from 'react';
-import { Analytics } from '@vercel/analytics/react';
 
 export default function RootHtml({ children }: PropsWithChildren) {
   const { bodyAttributes, bodyNodes, headNodes, htmlAttributes } = useServerDocumentContext();
@@ -14,6 +14,7 @@ export default function RootHtml({ children }: PropsWithChildren) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
         />
+        <meta name="theme-color" content="#63301D" />
         <ScrollViewStyleReset />
         {headNodes}
       </head>

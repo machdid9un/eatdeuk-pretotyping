@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: BrandColors.border,
     borderRadius: Layout.cardRadius,
-    backgroundColor: BrandColors.background,
+    backgroundColor: BrandColors.card,
   },
   image: {
     width: 136,
