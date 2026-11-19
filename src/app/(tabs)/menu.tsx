@@ -6,7 +6,7 @@ import { MenuCard } from '@/components/menu-card';
 import { PageScrollView } from '@/components/page-scroll-view';
 import { BrandColors } from '@/constants/brand';
 import { PARTICIPATION_FORM_URL } from '@/constants/links';
-import { menus } from '@/data/menus';
+import { menus } from '@/data/menus'; 
 
 export default function MenuScreen() {
   const openParticipationForm = () => {
